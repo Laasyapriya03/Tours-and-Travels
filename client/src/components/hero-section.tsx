@@ -62,29 +62,7 @@ export default function HeroSection() {
             Explore the World with Us!
           </p>
 
-          {/* Search Bar */}
-          <div className="card-gradient rounded-lg shadow-xl p-6 mb-8 max-w-2xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-4">
-              <div className="flex-1">
-                <Input
-                  type="text"
-                  placeholder="Search destinations..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onKeyPress={handleKeyPress}
-                  className="w-full"
-                />
-              </div>
-              <Button variant="default" className="bg-sky-blue-deep hover:bg-sky-blue-darker text-white">
-                <Filter className="w-4 h-4 mr-2" />
-                Filter
-              </Button>
-              <Button onClick={handleSearch} className="bg-sky-blue-deep hover:bg-sky-blue-darker text-white">
-                <Search className="w-4 h-4 mr-2" />
-                Search
-              </Button>
-            </div>
-          </div>
+
 
           <Button className="bg-accent-gold text-sky-blue-darker px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors shadow-lg">
             Learn More

@@ -64,9 +64,7 @@ export default function HeroSection() {
 
 
 
-          <Button className="bg-accent-gold text-sky-blue-darker px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors shadow-lg">
-            Learn More
-          </Button>
+
         </div>
 
         {/* Floating Airplane */}

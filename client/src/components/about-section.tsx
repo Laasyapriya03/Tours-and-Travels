@@ -2,8 +2,8 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 px-4 blue-gradient">
       <div className="container mx-auto max-w-6xl">
-        <div className="card-gradient rounded-2xl p-8 md:p-12 shadow-2xl">
-          <h2 className="text-4xl font-bold text-deep-blue mb-6 text-center">
+        <div className="card-gradient rounded-2xl p-8 md:p-12 shadow-2xl animate-slide-in">
+          <h2 className="text-4xl font-bold text-sky-blue-darker mb-6 text-center">
             About Bon Voyage Tours and Travels
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">

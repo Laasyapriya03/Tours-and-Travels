@@ -10,9 +10,9 @@ export default function HeritageCard({ heritage }: HeritageCardProps) {
   const getCategoryIcon = (category: string) => {
     switch (category.toLowerCase()) {
       case "castle":
-        return <Crown className="text-accent-yellow mr-2" />;
+        return <Crown className="text-accent-gold mr-2" />;
       default:
-        return <Crown className="text-accent-yellow mr-2" />;
+        return <Crown className="text-accent-gold mr-2" />;
     }
   };
 
@@ -25,7 +25,7 @@ export default function HeritageCard({ heritage }: HeritageCardProps) {
           className="w-full h-48 object-cover rounded-lg"
         />
       </div>
-      <h3 className="text-2xl font-bold text-deep-blue mb-3 flex items-center">
+      <h3 className="text-2xl font-bold text-sky-blue-darker mb-3 flex items-center">
         {getCategoryIcon(heritage.category)}
         {heritage.name}
       </h3>
@@ -35,7 +35,7 @@ export default function HeritageCard({ heritage }: HeritageCardProps) {
           <Clock className="w-4 h-4 mr-1" />
           Built: {heritage.builtPeriod}
         </span>
-        <Button className="bg-primary hover:bg-primary/90">
+        <Button className="bg-sky-blue-deep hover:bg-sky-blue-darker text-white">
           Learn More
         </Button>
       </div>

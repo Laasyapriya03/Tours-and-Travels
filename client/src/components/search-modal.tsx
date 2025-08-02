@@ -20,7 +20,7 @@ export default function SearchModal({ isOpen, onClose, searchQuery }: SearchModa
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-deep-blue">
+          <DialogTitle className="text-2xl font-bold text-sky-blue-darker">
             Search Results
           </DialogTitle>
         </DialogHeader>
@@ -28,7 +28,7 @@ export default function SearchModal({ isOpen, onClose, searchQuery }: SearchModa
         <div className="p-4">
           {isLoading ? (
             <div className="text-center py-8">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto"></div>
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-blue-deep mx-auto"></div>
               <p className="mt-4 text-gray-600">Searching destinations...</p>
             </div>
           ) : results && results.length > 0 ? (
@@ -42,7 +42,7 @@ export default function SearchModal({ isOpen, onClose, searchQuery }: SearchModa
                 {results.map((destination) => (
                   <div
                     key={destination.id}
-                    className="bg-gray-50 rounded-xl p-4 hover:shadow-lg transition-all duration-300"
+                    className="bg-sky-blue-light/20 rounded-xl p-4 hover:shadow-lg transition-all duration-300"
                   >
                     <div className="flex flex-col md:flex-row gap-4">
                       <img
@@ -52,23 +52,23 @@ export default function SearchModal({ isOpen, onClose, searchQuery }: SearchModa
                       />
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
-                          <h4 className="text-xl font-bold text-deep-blue">
+                          <h4 className="text-xl font-bold text-sky-blue-darker">
                             {destination.name}
                           </h4>
-                          <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">
+                          <span className="bg-sky-blue-light text-sky-blue-darker px-2 py-1 rounded-full text-xs font-medium">
                             {destination.type}
                           </span>
                         </div>
                         <p className="text-gray-600 mb-2">
-                          <MapPin className="inline w-4 h-4 text-accent-yellow mr-1" />
+                          <MapPin className="inline w-4 h-4 text-accent-gold mr-1" />
                           {destination.country}
                         </p>
                         <p className="text-gray-600 mb-3">{destination.description}</p>
                         <div className="flex items-center justify-between">
-                          <span className="text-lg font-semibold text-deep-blue">
+                          <span className="text-lg font-semibold text-sky-blue-darker">
                             From ${destination.price}
                           </span>
-                          <Button className="bg-primary hover:bg-primary/90">
+                          <Button className="bg-sky-blue-deep hover:bg-sky-blue-darker text-white">
                             View Details
                           </Button>
                         </div>

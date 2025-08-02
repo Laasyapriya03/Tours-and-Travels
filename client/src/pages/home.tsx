@@ -50,25 +50,25 @@ export default function Home() {
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Plane className="text-accent-yellow text-2xl" />
-              <span className="text-deep-blue text-xl font-bold">Bon Voyage</span>
+              <Plane className="text-accent-gold text-2xl animate-bounce-gentle" />
+              <span className="text-sky-blue-darker text-xl font-bold">Bon Voyage</span>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">Home</a>
-              <a href="#destinations" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">Destinations</a>
-              <a href="#attractions" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">Attractions</a>
-              <a href="#restaurants" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">Restaurants</a>
-              <a href="#heritage" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">Heritage</a>
-              <a href="#accommodations" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">Stay</a>
-              <a href="#about" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">About</a>
-              <a href="#contact" className="text-deep-blue hover:text-accent-yellow transition-colors font-medium">Contact</a>
+              <a href="#home" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">Home</a>
+              <a href="#destinations" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">Destinations</a>
+              <a href="#attractions" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">Attractions</a>
+              <a href="#restaurants" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">Restaurants</a>
+              <a href="#heritage" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">Heritage</a>
+              <a href="#accommodations" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">Stay</a>
+              <a href="#about" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">About</a>
+              <a href="#contact" className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium">Contact</a>
             </div>
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-deep-blue p-2"
+              className="md:hidden text-sky-blue-darker p-2 hover:text-accent-gold transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -77,16 +77,16 @@ export default function Home() {
 
           {/* Mobile Navigation Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm border-b shadow-lg">
+            <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm border-b shadow-lg animate-slide-in">
               <div className="flex flex-col space-y-4 p-4">
-                <button onClick={() => handleMobileMenuClick('#home')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">Home</button>
-                <button onClick={() => handleMobileMenuClick('#destinations')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">Destinations</button>
-                <button onClick={() => handleMobileMenuClick('#attractions')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">Attractions</button>
-                <button onClick={() => handleMobileMenuClick('#restaurants')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">Restaurants</button>
-                <button onClick={() => handleMobileMenuClick('#heritage')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">Heritage</button>
-                <button onClick={() => handleMobileMenuClick('#accommodations')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">Stay</button>
-                <button onClick={() => handleMobileMenuClick('#about')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">About</button>
-                <button onClick={() => handleMobileMenuClick('#contact')} className="text-deep-blue hover:text-accent-yellow transition-colors font-medium text-left">Contact</button>
+                <button onClick={() => handleMobileMenuClick('#home')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">Home</button>
+                <button onClick={() => handleMobileMenuClick('#destinations')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">Destinations</button>
+                <button onClick={() => handleMobileMenuClick('#attractions')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">Attractions</button>
+                <button onClick={() => handleMobileMenuClick('#restaurants')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">Restaurants</button>
+                <button onClick={() => handleMobileMenuClick('#heritage')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">Heritage</button>
+                <button onClick={() => handleMobileMenuClick('#accommodations')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">Stay</button>
+                <button onClick={() => handleMobileMenuClick('#about')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">About</button>
+                <button onClick={() => handleMobileMenuClick('#contact')} className="text-sky-blue-darker hover:text-accent-gold transition-colors font-medium text-left">Contact</button>
               </div>
             </div>
           )}

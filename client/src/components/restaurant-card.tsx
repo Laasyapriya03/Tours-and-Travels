@@ -15,10 +15,10 @@ export default function RestaurantCard({ restaurant }: RestaurantCardProps) {
           className="w-full h-32 object-cover rounded-lg"
         />
       </div>
-      <h4 className="font-bold text-deep-blue mb-2">{restaurant.name}</h4>
+      <h4 className="font-bold text-sky-blue-darker mb-2">{restaurant.name}</h4>
       <p className="text-sm text-gray-600 mb-2">{restaurant.type} • {restaurant.cuisine}</p>
       <div className="flex items-center mb-2">
-        <div className="flex text-accent-yellow">
+        <div className="flex text-accent-gold">
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}

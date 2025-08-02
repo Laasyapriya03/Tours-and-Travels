@@ -40,13 +40,13 @@ export default function HeroSection() {
             <div className="w-96 h-64 border-2 border-white rounded-lg opacity-50 relative">
               {/* Location pins */}
               <div className="absolute top-8 left-12">
-                <MapPin className="text-accent-yellow text-xl" />
+                <MapPin className="text-accent-gold text-xl" />
               </div>
               <div className="absolute top-20 right-20">
-                <MapPin className="text-accent-yellow text-xl" />
+                <MapPin className="text-accent-gold text-xl" />
               </div>
               <div className="absolute bottom-12 left-1/3">
-                <MapPin className="text-accent-yellow text-xl" />
+                <MapPin className="text-accent-gold text-xl" />
               </div>
             </div>
           </div>
@@ -75,18 +75,18 @@ export default function HeroSection() {
                   className="w-full"
                 />
               </div>
-              <Button variant="default" className="bg-primary hover:bg-primary/90">
+              <Button variant="default" className="bg-sky-blue-deep hover:bg-sky-blue-darker text-white">
                 <Filter className="w-4 h-4 mr-2" />
                 Filter
               </Button>
-              <Button onClick={handleSearch} className="bg-primary hover:bg-primary/90">
+              <Button onClick={handleSearch} className="bg-sky-blue-deep hover:bg-sky-blue-darker text-white">
                 <Search className="w-4 h-4 mr-2" />
                 Search
               </Button>
             </div>
           </div>
 
-          <Button className="bg-accent-yellow text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors shadow-lg">
+          <Button className="bg-accent-gold text-sky-blue-darker px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors shadow-lg">
             Learn More
           </Button>
         </div>

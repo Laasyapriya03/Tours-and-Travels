@@ -51,37 +51,37 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 px-4 blue-gradient">
       <div className="container mx-auto max-w-4xl">
-        <div className="card-gradient rounded-2xl p-8 md:p-12 shadow-2xl text-center">
-          <h2 className="text-4xl font-bold text-deep-blue mb-8">Contact Us</h2>
+        <div className="card-gradient rounded-2xl p-8 md:p-12 shadow-2xl text-center animate-slide-in">
+          <h2 className="text-4xl font-bold text-sky-blue-darker mb-8">Contact Us</h2>
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
-              <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-sky-blue-deep text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
                 <Phone className="text-2xl" />
               </div>
-              <h4 className="font-bold text-deep-blue mb-2">Call Us</h4>
+              <h4 className="font-bold text-sky-blue-darker mb-2">Call Us</h4>
               <p className="text-gray-700">+1 (555) 123-4567</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-sky-blue-deep text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
                 <Mail className="text-2xl" />
               </div>
-              <h4 className="font-bold text-deep-blue mb-2">Email Us</h4>
+              <h4 className="font-bold text-sky-blue-darker mb-2">Email Us</h4>
               <p className="text-gray-700">info@bonvoyage.com</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-sky-blue-deep text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
                 <MapPin className="text-2xl" />
               </div>
-              <h4 className="font-bold text-deep-blue mb-2">Visit Us</h4>
+              <h4 className="font-bold text-sky-blue-darker mb-2">Visit Us</h4>
               <p className="text-gray-700">123 Travel Street<br/>Adventure City, AC 12345</p>
             </div>
           </div>
 
           <div className="max-w-md mx-auto">
-            <h3 className="text-xl font-bold text-deep-blue mb-4">Get a Quote</h3>
+            <h3 className="text-xl font-bold text-sky-blue-darker mb-4">Get a Quote</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
                 type="text"
@@ -90,6 +90,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
+                className="border-sky-blue-light focus:border-sky-blue-deep"
               />
               <Input
                 type="email"
@@ -98,6 +99,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
+                className="border-sky-blue-light focus:border-sky-blue-deep"
               />
               <Textarea
                 name="message"
@@ -106,10 +108,11 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={handleInputChange}
                 required
+                className="border-sky-blue-light focus:border-sky-blue-deep"
               />
               <Button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary/90 font-semibold"
+                className="w-full bg-sky-blue-deep hover:bg-sky-blue-darker text-white font-semibold"
                 disabled={contactMutation.isPending}
               >
                 {contactMutation.isPending ? "Sending..." : "Request Quote"}

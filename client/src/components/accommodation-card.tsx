@@ -32,13 +32,13 @@ export default function AccommodationCard({ accommodation }: AccommodationCardPr
         </div>
       </div>
       <div className="p-4">
-        <h4 className="font-bold text-deep-blue mb-2">{accommodation.name}</h4>
+        <h4 className="font-bold text-sky-blue-darker mb-2">{accommodation.name}</h4>
         <p className="text-sm text-gray-600 mb-2">
-          <MapPin className="inline w-4 h-4 text-accent-yellow mr-1" />
+          <MapPin className="inline w-4 h-4 text-accent-gold mr-1" />
           {accommodation.location}
         </p>
         <div className="flex items-center mb-2">
-          <div className="flex text-accent-yellow text-sm">
+          <div className="flex text-accent-gold text-sm">
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
@@ -54,7 +54,7 @@ export default function AccommodationCard({ accommodation }: AccommodationCardPr
           </div>
           <span className="text-sm text-gray-600 ml-2">{accommodation.rating}</span>
         </div>
-        <p className="text-lg font-bold text-deep-blue">${accommodation.pricePerNight}/night</p>
+        <p className="text-lg font-bold text-sky-blue-darker">${accommodation.pricePerNight}/night</p>
       </div>
     </div>
   );
